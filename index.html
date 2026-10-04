@@ -4,32 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>JC | Software Developer</title>
+    <title>John Carlo Servidad | Software Developer</title>
+    <meta
+      name="description"
+      content="John Carlo Servidad, Software Developer and BSIT Cum Laude graduate. Web, mobile, and application development."
+    />
+    <meta name="theme-color" content="#212529" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="John Carlo Servidad | Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of John Carlo Servidad: web, mobile, and application development."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <header class="site-header">
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Main navigation">
         <a href="#hero" class="navbar-logo">Jhncrl.</a>
 
-        <ul class="navbar-links">
+        <button
+          type="button"
+          class="navbar-toggle"
+          id="navbar-toggle"
+          aria-expanded="false"
+          aria-controls="navbar-links"
+          aria-label="Toggle menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar-links" id="navbar-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <section id="hero" class="hero-section">
         <div class="hero-content">
           <p class="hero-greeting">Hi, I'm</p>
 
           <h1 class="hero-name">JOHN CARLO SERVIDAD</h1>
 
-          <p class="hero-role">Software Developer <span>|</span> Programmer</p>
+          <p class="hero-role">
+            Software Developer <span aria-hidden="true">|</span> Programmer
+          </p>
 
           <p class="hero-description">
             A fresh Information Technology graduate and Cum Laude with
@@ -39,11 +71,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="button button-primary">
-              View Projects
-            </a>
-
-            <a href="#contact" class="button button-secondary"> Contact Me </a>
+            <a href="#projects" class="button button-primary">View Projects</a>
+            <a href="#contact" class="button button-secondary">Contact Me</a>
           </div>
         </div>
       </section>
@@ -94,6 +123,7 @@
           </div>
         </div>
       </section>
+
       <section id="skills" class="skills-section">
         <div class="section-header">
           <span class="section-number">02</span>
@@ -108,137 +138,62 @@
         </div>
 
         <div class="skills-grid">
-          <!-- Frontend -->
           <div class="skill-category">
             <div class="skill-category-header">
               <span class="skill-category-number">01</span>
               <h3>Frontend</h3>
             </div>
-
-            <div class="skill-list">
-              <div class="skill-item">
-                <span class="skill-icon">HTML</span>
-                <span class="skill-name">HTML</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">CSS</span>
-                <span class="skill-name">CSS</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">JS</span>
-                <span class="skill-name">JavaScript</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">R</span>
-                <span class="skill-name">React</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">RN</span>
-                <span class="skill-name">React Native</span>
-              </div>
-            </div>
+            <ul class="skill-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">React</li>
+              <li class="skill-item">React Native</li>
+            </ul>
           </div>
 
-          <!-- Backend -->
           <div class="skill-category">
             <div class="skill-category-header">
               <span class="skill-category-number">02</span>
               <h3>Backend</h3>
             </div>
-
-            <div class="skill-list">
-              <div class="skill-item">
-                <span class="skill-icon">PHP</span>
-                <span class="skill-name">PHP</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">PY</span>
-                <span class="skill-name">Python</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">DJ</span>
-                <span class="skill-name">Django</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">JV</span>
-                <span class="skill-name">Java</span>
-              </div>
-            </div>
+            <ul class="skill-list">
+              <li class="skill-item">PHP</li>
+              <li class="skill-item">Python</li>
+              <li class="skill-item">Django</li>
+              <li class="skill-item">Java</li>
+            </ul>
           </div>
 
-          <!-- Database -->
           <div class="skill-category">
             <div class="skill-category-header">
               <span class="skill-category-number">03</span>
               <h3>Database</h3>
             </div>
-
-            <div class="skill-list">
-              <div class="skill-item">
-                <span class="skill-icon">SQL</span>
-                <span class="skill-name">MySQL</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">SQL</span>
-                <span class="skill-name">SQL</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">FB</span>
-                <span class="skill-name">Firebase</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">SB</span>
-                <span class="skill-name">Supabase</span>
-              </div>
-            </div>
+            <ul class="skill-list">
+              <li class="skill-item">MySQL</li>
+              <li class="skill-item">SQL</li>
+              <li class="skill-item">Firebase</li>
+              <li class="skill-item">Supabase</li>
+            </ul>
           </div>
 
-          <!-- Tools -->
           <div class="skill-category">
             <div class="skill-category-header">
               <span class="skill-category-number">04</span>
-              <h3>Tools & Design</h3>
+              <h3>Tools &amp; Design</h3>
             </div>
-
-            <div class="skill-list">
-              <div class="skill-item">
-                <span class="skill-icon">GH</span>
-                <span class="skill-name">Git / GitHub</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">FG</span>
-                <span class="skill-name">Figma</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">PA</span>
-                <span class="skill-name">Power Apps</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">PF</span>
-                <span class="skill-name">Power Automate</span>
-              </div>
-
-              <div class="skill-item">
-                <span class="skill-icon">SP</span>
-                <span class="skill-name">SharePoint</span>
-              </div>
-            </div>
+            <ul class="skill-list">
+              <li class="skill-item">Git / GitHub</li>
+              <li class="skill-item">Figma</li>
+              <li class="skill-item">Power Apps</li>
+              <li class="skill-item">Power Automate</li>
+              <li class="skill-item">SharePoint</li>
+            </ul>
           </div>
         </div>
       </section>
+
       <section id="projects" class="projects-section">
         <div class="section-header">
           <span class="section-number">03</span>
@@ -260,6 +215,7 @@
                 src="assets/images/smartspeak-1.png"
                 alt="SmartSpeak application preview"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -271,12 +227,12 @@
                 communication difficulties through digital PECS cards.
               </p>
 
-              <div class="project-tech">
-                <span>React Native</span>
-                <span>Expo</span>
-                <span>TypeScript</span>
-                <span>Firebase</span>
-              </div>
+              <ul class="project-tech">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+              </ul>
 
               <div class="project-links">
                 <button
@@ -284,7 +240,7 @@
                   class="project-link project-modal-trigger"
                   data-project="smartspeak"
                 >
-                  View Project <span>↗</span>
+                  View Project <span aria-hidden="true">↗</span>
                 </button>
                 <a
                   href="https://github.com/jhncrl04/smartspeak"
@@ -292,7 +248,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub <span>↗</span>
+                  GitHub <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
@@ -305,6 +261,7 @@
                 src="assets/images/cbc-1.png"
                 alt="Cool Beans Coffee web application preview"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -317,12 +274,12 @@
                 according to their preferences.
               </p>
 
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-              </div>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
 
               <div class="project-links">
                 <button
@@ -330,7 +287,7 @@
                   class="project-link project-modal-trigger"
                   data-project="coffeeshopweb"
                 >
-                  View Project <span>↗</span>
+                  View Project <span aria-hidden="true">↗</span>
                 </button>
                 <a
                   href="https://github.com/jhncrl04/coffee-shop"
@@ -338,7 +295,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub <span>↗</span>
+                  GitHub <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
@@ -348,40 +305,41 @@
           <article class="project-card">
             <div class="project-preview project-preview-desktop">
               <img
-                src="assets/images/jabs-coffee-pos-1.png"
+                src="assets/images/jabs-1.png"
                 alt="Jab's Coffee POS preview"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
             <div class="project-content">
-              <span class="project-type">Computer Application</span>
+              <span class="project-type">Desktop Application</span>
               <h3 class="project-title">Jab's Coffee POS</h3>
               <p class="project-description">
                 A simple coffee point-of-sale system designed to manage orders
                 and support day-to-day coffee shop transactions.
               </p>
 
-              <div class="project-tech">
-                <span>Java</span>
-                <span>MySQL</span>
-              </div>
+              <ul class="project-tech">
+                <li>Java</li>
+                <li>MySQL</li>
+              </ul>
 
               <div class="project-links">
                 <button
                   type="button"
                   class="project-link project-modal-trigger"
-                  data-project="job-tracker"
+                  data-project="jabs-pos"
                 >
-                  View Project <span>↗</span>
+                  View Project <span aria-hidden="true">↗</span>
                 </button>
                 <a
-                  href="https://github.com/jhncrl04/job-application-tracker"
+                  href="https://github.com/jhncrl04/coffee-pos-java"
                   class="project-link project-link-secondary"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub <span>↗</span>
+                  GitHub <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
@@ -405,6 +363,7 @@
           <span class="section-number">04</span>
           <h2 class="section-title">Experience</h2>
         </div>
+
         <div class="experience-content">
           <article class="experience-item">
             <div class="experience-marker"><span></span></div>
@@ -417,13 +376,15 @@
                     Denso Ten Solutions Philippines Corporation
                   </p>
                 </div>
-                <span class="experience-date"> Dec 2025 — Apr 2026 </span>
+                <span class="experience-date">Dec 2025 — Apr 2026</span>
               </div>
+
               <p class="experience-description">
                 Gained practical experience in software development and the
                 software testing lifecycle while contributing to the development
                 and improvement of internal business applications.
               </p>
+
               <ul class="experience-responsibilities">
                 <li>
                   Developed modules for the MIS Service Request System using
@@ -445,13 +406,17 @@
                   development process.
                 </li>
               </ul>
-              <div class="experience-tech">
-                <span>Power Apps</span> <span>Power Automate</span>
-                <span>SharePoint</span> <span>Software Testing</span>
-              </div>
+
+              <ul class="experience-tech">
+                <li>Power Apps</li>
+                <li>Power Automate</li>
+                <li>SharePoint</li>
+                <li>Software Testing</li>
+              </ul>
             </div>
           </article>
         </div>
+
         <div class="experience-education">
           <div class="education-label">
             <span class="section-number">Education</span>
@@ -459,7 +424,7 @@
           <div class="education-details">
             <h3>Bulacan State University</h3>
             <p>Bachelor of Science in Information Technology</p>
-            <span class="education-achievement"> Cum Laude </span>
+            <span class="education-achievement">Cum Laude</span>
           </div>
         </div>
       </section>
@@ -469,6 +434,7 @@
           <span class="section-number">05</span>
           <h2 class="section-title">Contact</h2>
         </div>
+
         <div class="contact-content">
           <div class="contact-intro">
             <span class="contact-label">Let's Work Together</span>
@@ -478,21 +444,68 @@
             <p class="contact-description">
               I'm currently open to opportunities in software development, web
               development, and other IT-related roles. If you'd like to work
-              together or simply want to get in touch, feel free to reach out.
+              together or simply want to get in touch, send me a message.
             </p>
-            <a
-              href="mailto:jcarlo.servidad.dev@gmail.com"
-              class="button button-primary contact-button"
-            >
-              Get In Touch <span>↗</span>
-            </a>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Get a free key at https://web3forms.com (enter your email) -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+              <input
+                type="hidden"
+                name="subject"
+                value="New portfolio message"
+              />
+              <!-- Honeypot: bots fill this, humans never see it -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="visually-hidden"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <div class="form-row">
+                <label>
+                  Name
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
+                <label>
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+              </div>
+
+              <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+
+              <button
+                type="submit"
+                class="button button-primary contact-button"
+                id="contact-submit"
+              >
+                Send Message <span aria-hidden="true">↗</span>
+              </button>
+
+              <p class="form-status" id="form-status" role="status"></p>
+            </form>
           </div>
+
           <div class="contact-details">
             <div class="contact-item">
               <span class="contact-item-label">Email</span>
               <a href="mailto:jcarlo.servidad.dev@gmail.com">
                 jcarlo.servidad.dev@gmail.com
               </a>
+              <button type="button" class="copy-email" id="copy-email">
+                Copy email
+              </button>
             </div>
             <div class="contact-item">
               <span class="contact-item-label">LinkedIn</span>
@@ -506,7 +519,11 @@
             </div>
             <div class="contact-item">
               <span class="contact-item-label">GitHub</span>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/jhncrl04"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 github.com/jhncrl04 ↗
               </a>
             </div>
@@ -532,14 +549,12 @@
         >
           ×
         </button>
+
         <div class="project-modal-header">
-          <span class="project-modal-type" id="project-modal-type">
-            Project Type
-          </span>
-          <h2 class="project-modal-title" id="project-modal-title">
-            Project Title
-          </h2>
+          <span class="project-modal-type" id="project-modal-type"></span>
+          <h2 class="project-modal-title" id="project-modal-title"></h2>
         </div>
+
         <div class="project-modal-gallery">
           <div class="project-modal-main-image">
             <img id="project-modal-image" src="" alt="" />
@@ -549,16 +564,18 @@
             id="project-modal-thumbnails"
           ></div>
         </div>
+
         <div class="project-modal-body">
           <div class="project-modal-description">
             <h3>About the Project</h3>
-            <p id="project-modal-description">Project description.</p>
+            <p id="project-modal-description"></p>
           </div>
           <div class="project-modal-technologies">
             <h3>Technologies</h3>
-            <div class="project-modal-tech-list" id="project-modal-tech"></div>
+            <ul class="project-modal-tech-list" id="project-modal-tech"></ul>
           </div>
         </div>
+
         <div class="project-modal-footer">
           <a
             href="#"
@@ -567,7 +584,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            View GitHub <span>↗</span>
+            View GitHub <span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
@@ -584,17 +601,15 @@
             href="https://github.com/jhncrl04"
             target="_blank"
             rel="noopener noreferrer"
+            >GitHub</a
           >
-            GitHub
-          </a>
           <a
             href="https://www.linkedin.com/in/jcarlo-servidad/"
             target="_blank"
             rel="noopener noreferrer"
+            >LinkedIn</a
           >
-            LinkedIn
-          </a>
-          <a href="#hero"> Back to Top ↑ </a>
+          <a href="#hero">Back to Top ↑</a>
         </div>
       </div>
     </footer>
